@@ -1,0 +1,11 @@
+desenvolvimento para ios, android
+back end e front end
+back end igual ao web
+front end e diferente nas plataformas e desenvolvimento
+java;
+kotlin;
+switch;(ios)
+hibrido
+flutter, react native, ionic
+xcode = ios
+android studio = android

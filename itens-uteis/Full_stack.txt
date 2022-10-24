@@ -1,0 +1,2 @@
+full_stack
+programador que realiza front_end e back_end

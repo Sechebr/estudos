@@ -1,0 +1,13 @@
+cuida da experiencia do usuario, visa melhorar a satisfacao, e usabilidade do software
+desenha o front end.
+ ferramentas no UX / UI:
+	Figma, Adoble XP e +.
+UX;
+pesquisa
+prototipo
+persona
+objetivos
+
+UI;
+cuida de cores, tipografia, micrografia e estilos.
+photo shop, ilustrator etc..

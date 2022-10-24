@@ -1,0 +1,7 @@
+Back_end
+Java;
+PHP;
+C#;
+Python;
+cuida da parte de requisicoes e servidor 
+API

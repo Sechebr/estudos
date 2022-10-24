@@ -1,0 +1,2 @@
+Quality Assurance
+cuida da parte da qualidade do codigo feito, identificando e solucionando erros

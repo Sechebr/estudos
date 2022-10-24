@@ -1,0 +1,9 @@
+
+
+BLOBS echo 'conteudo' | git hash-object --stdin, mostra o hash, sh1, echo -e 'blob9\0conteudo' contem os metadados do git
+
+TREES armazenam blobs, meta dados, nome do arquivo, monta a estrutura de onde estam cada arquivos.
+
+COMMITS objeto que junta blobs e arvores, aponta commit anterior, autor e mensagem anterior
+
+todos os elementos possuem sh1, blob, arvore e commit,

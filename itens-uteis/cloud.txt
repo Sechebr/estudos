@@ -1,0 +1,12 @@
+cloud
+nuvem publica sao empresas que oferecem servicos por quantidade de uso
+salesforce
+aws
+googlecloud
+azure
+pagando pelo uso
+vantagens 
+preco
+facilidade de contratacoes, configuracoes e infraestrutura
+escalabilidade
+performace

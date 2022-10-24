@@ -1,0 +1,10 @@
+comandos
+
+-git init(cria um repositorio .git oculta, para visualizar -a)
+-git add()
+-git commit()
+tracked,
+untracked - adiciona o arquivo
+unmodified - arquivo ainda nao modificado
+modified - arquivo unmodified que sofre modificacao
+staged - arquivos preparados para juntar a outros conjuntos de codigos
