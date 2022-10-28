@@ -1,0 +1,4 @@
+chave SSH
+uma forma de fornecer conexao segura e criptografada, chave publica e uma privada, 
+comando para criar uma chave usando git bash
+ssh-keygen -t ed25519 -c <e-mail usado>

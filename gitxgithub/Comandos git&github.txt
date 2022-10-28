@@ -1,0 +1,9 @@
+windows						Unix
+-cd(navega pelas pastas)			-cd( mesma funcao)
+-dir(lista diretorios)				-Ls(lista diretorios)
+-mkdir(cria uma pasta)				-clear(ctrl+l)(limpa o terminal)
+-cls(limpa o terminal)				-mkdir(cria uma pasta)
+-del / rmdir()					-rm -rf
+echo <nome> > <nome>.txt para criar doc txt mesmo jeito nos 2
+
+listar

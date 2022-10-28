@@ -1,0 +1,9 @@
+1) Faca um algoritimo que dado as 3 notas tiradad pelo alina em um semestre na faculdade
+calcule sua medio e a classificacao conforme a tabela a baixo
+
+media === (nota1 + nota2 + nota3) / 3;
+
+classificacao
+-media menor que 5, reprovacao;
+-media entre 5 e 7, recuperacao;
+-media acima de 7, passou de semestre;
