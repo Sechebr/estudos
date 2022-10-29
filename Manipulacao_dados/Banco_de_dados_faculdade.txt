@@ -1,0 +1,186 @@
+controle academico
+
+*  quem deve se envolver?
+
+* quais dados sao relevantes para iniciar o desenvolvimento
+do software.
+
+* quais entidades e seus respectivos atributos ?
+
+entidade = grupo de dados, dados de uma materia ou cadastro por exemplo
+
+-------------------------------------------------------------
+
+*Sistema e composto: dados, hardware, software e usuarios
+
+*Hardware - determina a capacidade de armazenamento e da disposicao dos dados
+e  da disponibilizacao dos dados
+
+*Softwares - S G B D para construir o banco de dados e demais softwares para 
+usuarios
+
+*Usuarios - atores que realizam as operacoes
+    * programadores
+    * usuarios (sofisticado, especialistas, navegantes e desenvolvedores)
+* Administrador do banco de dados(DBA)
+
+-- sofisticado
+
+-- especialistas
+
+-------------------------------------------------------------------------------------
+
+funcoes do DBA
+
+*cria, modifica e atualiza o esquema do banco de dados, executando um conjunto de instrucoes.
+
+*concessao de autorizacao ao acesso aos dados, juntamente com os administradores da empresa.
+
+*manutencao -  liberar espacos no servidor, realizar backup e monitor as tarefas no servidor
+(evitando possiveis gargalos de acessos)
+
+Projetista de BD - analistaa de sistemas que elabora o DER.
+
+-----------------------------------------------------------------------------------------------------------
+
+modelagem de dados relacional:
+    *data: decada de 70 por Peter P. Chen
+    *conceito: baseado na teoria de conjuntos da algebra relacional.
+*Representacao abstrata e simplificada de um sistema real (grafico), depende da experiencia individual 
+*forma grafica, possibilita a comunicacao entre usuarios finais de banco de dados, Guimaraes(2003).
+
+-------------------------------------------------------------------------------------------------
+
+Modelo relacional
+
+*nao estatico - suporta evolucao(baseado em iteracoes)
+
+*informacoes em uma base de dados sao acomodadas em tabelas e linhas (tuplas)
+
+*operacoes baseadas em algebra relacional e teoria de conjuntos
+-selecao     -subtracao
+-uniao       -produto cartesiano
+-juncao      -projecao
+
+tabela aluno
+
+matricula       -- nome --      dt. nasc.
+1515            --ana lee--     18/06/1989
+1819            --pedro--       21/07/2000
+2125            --karla--       01/02/1999
+
+*tabela: aluno
+*coluna: matricula
+*tupla: 1515, ana lee, 18/06/1989
+
+---------------------------------------------------------------------------------
+
+Seguranca 
+Redundancia
+*grande numero de dados e falhas na modelagem de um banco de dados
+podem levar a redundancias: problemas
+*analise dos atributos das entidades
+*um SGBD deve permitir a Redundancia controlada
+
+redundancia =  ter o mesmo dado em diversos lugares
+
+redundancia para recuperacao de falhas
+
+estabelecer uma politica de BACKUP? quem tera acesso ao backup;
+* responsabilidades: quem fara o back up? 
+*meios: qual midia ou nuvem ? qual software? qual hardware?\
+*preriodo: qual intervalo dos Backups?
+*retencao: quanto tempo o backup deve ficar armazenado na mesma midia?
+*armazenamento: onde serao armazenados?
+
+protecao de SGBD
+*proteger o banco de dados contra copia
+*preservar o seu conteudo
+*autenticacao e politicas de permissao
+
+*politica de Seguranca  
+    *integridade
+    *confiabilidade
+    *disponibilidade
+
+----------------------------------------------------------------------------------------------.
+
+*atomicidade: nenhuma ou a totalidade das operacoes da transacao sao 
+realizadas com sucesso;
+*consistencia: preserva todas as regras impostasno banco de dados:
+*isolamento: e a seguranca de que uma transacao nao interfira no  trabalho de outra
+*durabilidade: ou persistencia e o armazenamento confiavel e seguro.
+
+-------------------------------------------------------------------------------------------------
+
+Registro de acoes(log)
+*autenticacao do ususario
+*possuir um LOG para registrar todas as operacoes
+realizadas em dados
+*permite recuperacao de uma transacao (iteracao)
+*auditoria em operacao e em alteracao de dados.
+
+--------------------------------------------------------------------------------------------------
+
+dados para tomadas de decisoes
+
+DADOS > REGRAS DE NEGOCIOS > ESTRATEGIAS > decisoes
+
+*e mais que um mero repositorio de dados
+*possibilita a producao de inteligencia de negocio
+*facilitam a visualizacao e composicao para tomada de decisoes
+*visam obter informacoes de alto nivel apartir das decisoes detalhadas
+
+DATA WAREHOUSE
+arquivo ou repositorio de informacoes estruturadas
+varias origens (bancos de dados)
+origem de dados: interna e externa
+armazenados em um unico local e com um esquema unificado
+permite consultas para o apoio a decisao
+
+DATA MINING
+mineiracao de informacoes conhecidas
+descoberta de informacoes em funcao de novas regras e padroes
+analise de informacoes semiautomaticas
+obter respostas a perguntas estrategicas
+
+OLTP vs OLAP
+
+OLTP
+repetidas repetidas realizadas no SGBDdos niveis operacional e administrativo
+
+OLAP
+processo interativo de criar, gerenciar, analisar e gerar relatorios
+armazenados em uma tabela multidimensional(ou arrays multidimensionais)
+analise de algoritimos e softwares especificos.
+
+
+
+OLPT   vs   OLAP
+operacoes de rotina                 operacoes analiticas
+baixo desempenho em consultas       alto desempenho em consultas
+sem historico de consultas          possibilita historico de consultas
+estrutura convencionais de armz.    armazenamento em data WAREHOUSE
+dados volateis                      dados historicos e nao volateis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

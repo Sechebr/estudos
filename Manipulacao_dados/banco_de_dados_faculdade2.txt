@@ -1,0 +1,162 @@
+aplicação em contexto de uma faculdade
+
+Contextualizando
+
+Responsável pela análise de dados e projeto de um banco de dados para:
+
+ - Instituição de ensino médio e superior
+ - Controle acadêmico
+ - Dados de alunos, professores, diciplina, cursos e departamentos
+ - O que é dado e entidade?
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+MER - aperfeiçoar o projeto de banco de dados, edgar 
+
+* Entidade: contém atributos própios.
+
+		ALUNO    CURSO
+
+quando represento uma entidade, represento o que fará parte do meu sistema de faculdade, ex: aluno, curso, professor, representação e dentro de um RETANGULO
+
+* Atributo: campo da entidade ou do Relacionamento.
+
+		-Matricula		-Curso
+		-Nome			-Duração
+
+* Relacionamento: relação determinada pela regra de negócio, sempre representando em um LOZANGO
+
+			-Matriculado
+
+* Efetuar um levantamento e análise das necessidades com as partes interessadas
+
+* Mapear os usuários do BD, para o controle de acesso
+
+ * Desenvolver as atividades:
+
+	-Concepção - objetivos e soluções desejadas
+	-Elicitação - definição de dados e informações
+	-Elaboração - modelar dados(entidades e relações)
+	-Negociação - complementar o modelo de dados
+
+atividades realizadas com todos participantes do desenvolvimento e os usuarios especialista.
+
+Controle acadêmico
+
+* Concepção - controlar as matriculas dos alunos nos respectivos cursos
+
+* Elicitação
+	- Alunos: nome, telefone, cpf, data-nascimento
+	- Curso: nome, duração, carga-horária
+* Elaboração - identificando entidades
+
+	aluno(dentro de um retagulo)		Curso(dentro de um retangulo)
+
+* Elaboração - identificando atributos
+* Diagrama DER
+
+	- Aluno				-Curso
+idAluno INT				idCurso INT
+aluno	VARCHAR(50)			Curso VARCHAR(50)
+	|					|
+	|					|
+	|					|
+	|					|
+	------------> - Cursando <---------------
+			Aluno_idAluno INT
+			Curso_idCurso INT
+
+ identificando relacionamento
+cardinalidade  /|\ (significa "N", varios)   || (representa "1")
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+ 
+Vantagens do MER no controle acadêmico
+
+Apresentar as vantagens:
+
+	- Indepência total dos dados: aluno e disciplina
+	- Melhor comunicação entre analistas e usuários
+	- Redução de tempo: desenvolvimento e manutenção
+	- Segurança e agilidade no gerenciamento: histórico do aluno.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - tipos de entidades
+
+ - entidades Fortes
+ - entidades Fracas ou Dependentes(entidades que dependem, pertencem ou fazem parte das fortes)
+ - entidades Agregadas(são as que juntas vao completar um processo ou representação)
+ - entidades Subordinadas()
+ - entidades Associativas(associam entidades separadas ex(cursando))
+
+grau de cardinalidade
+
+* valor específico ao relacionamento, expressando a faixa de ocorrências permitidas(mínima e máxima) entre as tabelas
+
+* grau de relacionamento, unário, binário, ternário, quadrinário e n-ário
+
+* graus de cardinalidade
+	- 1-1(um pra um)
+	- 1-n(um para muitos)
+	- N-1(muitos para um)
+	- N-N(muitos para muitos)
+Relacionamento
+
+* funcionário
+* caraacterísticas deste relacionamento: auto-relacionamento
+
+   			 Funcionário
+			  |       |
+			 1|	  | N
+			  |	  |
+			   Superior
+cenário onde o funcionário terá apenas um superior, porém, superior terá varios funcionarios.
+
+candidato -----> *cadastra* <----- curriculo
+cidade -------> *tem* <-------- funcionarios
+aluno --------> *cursa <------- cursos
+
+Relacionamento ternário
+
+Horário passa a ser uma Tabela Associativa
+
+
+Professor			Turma
+	|			|
+	|			|	
+     1,N|			|1,N
+	- - - -> horario < - - - 
+		   ^
+		   |
+		   |
+	        1,N|
+		disciplina 
+
+
+Relacionamento de agregação (representada por um grande retangulo)
+ ------------------------------------------------
+ |	N				N	|
+ | professor ------->  *gerar* <-------- prova  |
+ ------------------------------------------------
+			^	
+			|
+			|n
+		    *aplicar*
+
+			^
+			|
+			| N
+		      turma
+
+
+
+
+
+
+
+
+
+
+
+
+
+

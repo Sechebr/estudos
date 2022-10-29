@@ -1,0 +1,58 @@
+Banco de dados
+
+Modelo conceitual
+
+ - Uma descrição concisa das informações que o software deverá possuir, de acordo com seus requisitor
+
+ - Representação do que precisa ser realizado e nao como deverá ser realizado.
+
+ - Este modelo traz importantes vantagens
+	* Visão de nível macro;
+	* Independência de hardware e software;
+	* Focado no problema e não na solução.
+
+ - Linguagem Textual VS Gráfica
+
+
+		Ator: nome do ator, valor do cachê, data de nascimento, altura
+		
+
+		Filme: nome do filme, data de lançamento, orçamento, duração
+
+
+		Atua
+FILME - - - - - - - - - - - - ATOR
+
+	**representa o ator atuando no filme**
+
+
+Modelo Lógico
+
+ - aplicamos o conceito de modelos de entidade e ralacionamentos com o foco na criação do banco de dados.
+
+ - entidade são transformadas em tabelas.
+ 
+ - Relacionamentos são reproduzidos ou criados.
+
+ - Tipo de dados e suas escalas são definidos.
+
+representação modelo lógico:
+
+FILME - - - - - >>>> ATUAÇÃO <<<<<------------ATOR
+idFilme			idfilme				idAtor
+Nome(C)			idAtor				Nome(C)
+Data(D)			Papel(C)			Valor cache(V)
+Orçamento(V)		Data Cena(D)			Data nascto (D)
+Duração(T)		- - - - - -			Altura(N)
+
+Modelo Físico
+
+ - Definição das estruturas de armazenamento no BD, as chave(ou índices) e os relacionamentos.
+
+ - Comandos com sintaxes especifícas e executados diretamente SGBD(Commit).
+
+ - Sequência de execução.
+
+criando primeiro a tabela de filme, depois tabelas de ator e depois a criação da tabela de atuação, Porque, apartir das duas primeiras tabelas cria a tabela de relação que seria atuação.
+
+ 
