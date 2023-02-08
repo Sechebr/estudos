@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formatando link</title>
+	<style type="text/css">
+		
+		a{
+			padding: 5px 10px;
+			text-decoration: none;
+		}
+		/*sempre seguir esta ordem paraa construcao
+		links nao visitados
+		a:link{
+			color: #b9c941;
+		}
+
+		 links visitados 
+		a:visited{
+			color: #b9c941;
+		} outra maneira de usar a mesma configuracao para links visitados e nao visitados*/
+		a:link, a:visited{
+			color: #b9c941;
+		}
+
+
+		/*links hover, efeito ao passar o mouse por cima*/
+
+		a:hover{
+			color: blueviolet;
+			background: red;
+		}
+
+		/* link ativos, quando clica e segura o link */
+		a:active{
+			color: pink;
+		}
+
+	</style>
+</head>
+<body>
+	<a href="https://www.google.com.br">Google</a> |
+
+	<a href="https://https://www.twitch.tv">Twitch</a> |
+
+	<a href="https://www.youtube.com">Youtube</a>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+body{
+	width: 900px;
+	padding: 10px;
+	margin: 10px;
+	text-align: center left;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;;
+	color: white;
+	background-color: grey;
+	background-image: url(https://static.vecteezy.com/ti/vetor-gratis/p3/1987871-abstrato-preto-listras-diagonal-fundo-gratis-vetor.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}	
+.imagemPrincipal{
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	background-position: center top;
+	width: 900px;
+	margin-bottom: 20px;	
+}
+#menu{
+	background-color: #090909;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+a{
+	text-align: center left;
+	text-decoration: none;
+	color: grey;
+	font-style: bold;
+}
+#quemSomos{
+	background-color: #090909;
+	padding: 10px;
+}
+#rodape{
+	text-align: center;
+	font-style: bold;
+}
+.imagemPost{
+	width: 400px;
+	border: grey;
+	border-style: solid;
+}
